@@ -1,6 +1,6 @@
 # Question and Answer Board
 
-This application.
+This application is a question and answer board.  A user can input a question that other users can answer.  This user has the ability to edit and delete questions.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone <repository-url>`
 * `cd question-answer`
 * `npm install`
 * `bower install`
@@ -38,7 +38,7 @@ You will need the following things properly installed on your computer.
   * Create component to add answers to a questions dynamic route
 
 # UX/UI
-  * Include and modify bootstrap/materialize/Sass etc.
+  * Include and modify bootstrap.
   * Develop custom style
 
 # Polish
