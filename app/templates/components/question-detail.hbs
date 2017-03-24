@@ -5,9 +5,11 @@
 <p>{{question.content}}</p>
 <p>additional notes: {{question.notes}}</p>
 
+
 <h2>Answers:</h2>
 <ul>
+
   {{#each question.answers as |answer|}}
-    {{answer-tile answer=answer}}
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
   {{/each}}
 </ul>

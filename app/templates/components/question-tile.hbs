@@ -3,5 +3,6 @@
   <p>Question: {{question.content}}</p>
   <p>Notes: {{question.notes}}</p>
   <p>{{#link-to 'question' question.id}}Answer question{{/link-to}}</p>
+  {{question-update question=question update="update"}}
   <br>
 </li>
