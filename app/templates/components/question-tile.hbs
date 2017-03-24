@@ -2,4 +2,6 @@
   <p>Name: {{question.author}}</p>
   <p>Question: {{question.content}}</p>
   <p>Notes: {{question.notes}}</p>
+  <p>{{#link-to 'question' question.id}}Answer question{{/link-to}}</p>
+  <br>
 </li>
