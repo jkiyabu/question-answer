@@ -1,1 +1,10 @@
-{{outlet}}
+<p>Click on a question to leave an answer</p>
+
+<ul>
+  {{#each model as |question|}}
+    {{question-tile question=question}}
+     
+  {{/each}}
+</ul>
+
+<p>Add a question to the board!</p>
