@@ -1,12 +1,7 @@
-<h3>{{model.questions.author}}'s question</h3>
-{{question-detail question=model.questions deleteQuestion="deleteQuestion"}}
+
 
 {{question-update question=model.questions update="update"}}
 
-<ul>
-  {{#each model.answers as |answer|}}
-    <li>{{answer.content}} - by {{answer.author}}</li>
-  {{/each}}
-</ul>
+{{question-detail question=model.questions deleteQuestion="deleteQuestion"}}
 
-{{answer-add saveAnswer="saveAnswer"}}
+{{answer-add saveAnswer="saveAnswer" question=model.questions}}
