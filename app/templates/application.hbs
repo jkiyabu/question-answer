@@ -5,8 +5,18 @@
   </head>
   <body>
     <div class="container">
-      <h1>Q&A Board</h1>
-      {{#link-to 'index'}}Home{{/link-to}}
+      <div class='row'>
+        <div class="col-xs-3">
+        </div>
+        <div class="col-xs-7">
+          <div class="jumbotron">
+            <h1>Q&A Board</h1>
+            <h3>{{#link-to 'index'}}Home{{/link-to}}</h3>
+            
+          </div>
+        </div>
+
+      </div>
       {{outlet}}
     </div>
   </body>

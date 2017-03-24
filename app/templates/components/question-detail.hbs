@@ -1,14 +1,14 @@
-<button {{action 'delete' question}}>Delete Question</button>
+<br><br>
+<div class="col-xs-12 image-col">
+  <h3>{{question.author}}'s question</h3>
+  <p>{{question.content}}</p>
+  <p>additional notes: {{question.notes}}</p>
+  <button {{action 'delete' question}}>Delete Question</button>
+</div>
 
-<h2>{{question.author}}'s question</h2>
+<h4>Answers:</h4>
 
-<p>{{question.content}}</p>
-<p>additional notes: {{question.notes}}</p>
-
-
-<h2>Answers:</h2>
 <ul>
-
   {{#each question.answers as |answer|}}
     {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
   {{/each}}

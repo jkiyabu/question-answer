@@ -1,8 +1,9 @@
-<li>
+<div class="col-xs-12 image-col">
+  {{#link-to 'question' question.id}}
   <p>Name: {{question.author}}</p>
   <p>Question: {{question.content}}</p>
   <p>Notes: {{question.notes}}</p>
-  <p>{{#link-to 'question' question.id}}Answer question{{/link-to}}</p>
+  {{/link-to}}
   {{question-update question=question update="update"}}
-  <br>
-</li>
+</div>
+<br><br>
